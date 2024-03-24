@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Saverur Douse_Spopping</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/La Saveur Douce/Le_image/icon/1.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Noto Serif TC' rel='stylesheet'>
+  </head>
+
+<style>
+  
+  ::selection {
+  background-color: #BB0009;
+  color: #fff;
+}
+
+    /**********************導覽列css****************************/
+    .popular-products-content {
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+    }
+    .ciNxDx {
+      display: flex;
+      flex-direction: column;
+      width: calc(33% - 35%);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 30px 4px;
+      cursor: pointer;
+      transition: box-shadow 0.2s ease-in 0s;
+    }
+
+    .navbar-wrapper {
+      height: 90px;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .iMKRuG {
+      height: 100%;
+      max-width: 1240px;
+      background-color: rgb(255, 255, 255);
+      margin:0px auto;
+      padding: 0px;
+      display: flex;
+      -webkit-box-pack:justify;
+      justify-content:space-between;
+    }
+
+    .iMKRuG > .group-actions {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    .iMKRuG > .group-actions .button {
+      margin-right: 0px;
+      cursor: pointer;
+      position:relative;
+      font-family:"NSimSun";
+      font-size :16px;
+    }
+
+    .groupactions {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    .iMKRuG > .groupactions .button {
+      cursor: pointer;
+      margin-right: 30px;
+      position: relative;
+      font-family: "NSimSun";
+      font-size: 16px;
+    }
+
+    .buttonsecondary { 
+      cursor:pointer;
+      margin-right: 30px;
+      position: relative;
+      font-family: "Noto Serif TC";
+      font-size: 24px;
+      text-decoration: none;
+      color: #020202;
+      outline:none;
+    }
+
+    a,a:focus {
+      outline:none;
+    }
+
+    .carousel {
+      position: relative;
+      top: 80px;
+    }
+
+    
+.groupactions button {
+  padding: 8px 15px;
+  background-color: #BB0009;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  }
+
+  .groupactions button:hover {
+  background-color: #BB0009;
+  }
+    
+    /*****************************上方固定 CSS*******************************/
+    .row {
+      /*padding-left: 100px;
+      padding-right: 100px;*/
+      position: relative;
+      top: 80px;
+    }
+
+
+
+
+/*********************************************** 線條************************************* */
+
+.footerline {
+  position: relative;
+  width: 85%;
+  height: 0.5px; /* 線的高度 */
+  background-color: #909090; /* 線的顏色 */
+  margin: 20px auto;
+}
+
+/************************************************line右下角******************************/
+    /* 基本設定 */
+    body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 固定圖案的樣式 */
+.fixed-icon {
+  position: fixed;
+  bottom: 30px; /* 距離底部的距離 */
+  right: 70px; /* 距離右側的距離 */
+  width: 1px; /* 圖案的寬度 */
+  border-radius: 50%; /* 圖案的圓角 */
+  background-color: #0074e4; /* 圖案背景色 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 9999; /* 可能需要提高 z-index，確保顯示在其他元素之上 */
+}
+
+  /* 圖案悬浮效果 */
+  .fixed-icon:hover {
+  background-color: #0058a3; /* 悬浮時的背景色 */
+}
+
+  /* 圖案悬浮時的圖標效果 */
+  .fixed-icon:hover img {
+  filter: brightness(0.8); /* 悬浮時圖標變暗效果，你可以調整數值 */
+}
+  /*line右下角end*/
+
+
+/*body css*/
+
+.container {
+  padding: 55px;
+  padding-top: 200px;
+  display: flex;
+
+}
+
+.menu {
+  margin-right:50px;
+  display: flex;
+  margin-bottom: 10px;
+  list-style-type: none;
+  font-family:"Noto Serif TC" ;
+  color:rgb(89,87,87);
+
+}
+
+.section1 {
+  display:flex;
+  font-family:"Noto Sans TC";
+  color:rgb(89,87,87);
+  padding: 30px;
+  margin-bottom: 10px;
+  border : 1px solid rgb(229, 229, 234);
+  cursor:pointer;
+  font-family:"Noto Serif TC" ;
+  margin: auto;
+  text-align: center;
+}
+
+.section2 {
+  display:flex;
+  font-family:"Noto Sans TC";
+  color:rgb(89,87,87);
+  padding: 30px;
+  margin-bottom: 10px;
+  border : 1px solid rgb(229, 229, 234);
+  cursor:pointer;
+  font-family:"Noto Serif TC" ;
+  margin: auto;
+  text-align: center;
+}
+
+.section3 {
+  display:flex;
+  font-family:"Noto Sans TC";
+  color:rgb(89,87,87);
+  padding: 30px;
+  margin-bottom: 10px;
+  border : 1px solid rgb(229, 229, 234);
+  cursor:pointer;
+  font-family:"Noto Serif TC" ;
+  margin: auto;
+  text-align: center;
+}
+
+li{
+    list-style:none
+}
+
+/* .content {
+  display: none;
+} */
+
+.content div {
+  display: none;
+}
+
+.content div:target {
+  display: block;
+}
+
+
+h2 {
+  background-color: #BB0009;
+  font-size :20px;
+  padding : 10px;
+  color :rgb(255, 255, 255);
+  letter-spacing :0px;
+  font-family:"Noto Serif TC" ;
+}
+
+P {
+  padding-top: 30PX;
+  white-space:pre-line;
+  margin:0 ;
+  font-family:"Noto Serif TC" ;
+  color: rgb(89, 87, 87);
+}
+
+a{
+text-decoration: none;
+color: inherit;
+}
+
+a:hover {color:#BB0009;}
+
+
+/**********************導覽列其他選單**********************/
+
+   /* 預設隱藏 checkbox */
+   input[type="checkbox"] {
+    display: none;
+}
+
+/* 設置 label 的樣式 */
+.toggle-label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: right; /* 將 Toggle Menu 文字設置在右側 */
+    font-size:30px;
+}
+
+/* 側邊選單的樣式 */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: -250px; /*將側邊選單設置在右側並隱藏*/
+    transition: right 0.3s ease;
+}
+
+/* 當 checkbox 被選中時展開選單 */
+input[type="checkbox"]:checked ~ .sidebar {
+    right: 0;
+}
+
+/* 關閉按鈕的樣式 */
+.close-btn {
+    display: block;
+    text-align: right;
+    padding: 30px;
+    cursor: pointer;
+    color: rgb(89,87,87);
+    font-size: 40px;
+}
+
+/* 選單項目的樣式 */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    font-family: "Noto Serif TC";
+    font-size: 18px;
+}
+
+.sidebar ul li {
+    padding: 20px;
+}
+
+.sidebar ul li a {
+    color: rgb(89,87,87);
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: none;
+    color: #BB0009;
+}
+
+.menubutton {
+  padding-top: 14px;
+}
+
+
+/********************************RWD隱藏導覽列******************/
+
+@media screen and (max-width: 930px) {
+  .link-secondary {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .left group-actions {
+    display: none;
+  }
+
+  .logofirst {
+    width: 200px;
+  }
+}
+
+
+
+</style>
+
+<body style="background-color:#f6f6f6 ;">
+
+
+  <!--line右下角-->
+
+  <!-- 右下角固定圖案 -->
+  <a href="https://line.me/ti/p/nHYW7y2kWk" class="fixed-icon" target="_blank">
+    <img src="../La Saveur Douce/Le_image/icon/icon (4).png" alt="Line Icon">
+  </a>
+
+  <script src="script.js"></script>
+
+<!--line右下角end-->
+
+<!--上方導覽列-->
+<div class="navbar-wrapper shadow p-3 mb-5 bg-body">
+  <div class="iMKRuG">
+    <div class="left group-actions">
+      <div class="logofirst">
+        <a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce.HTML" > <img src="../La Saveur Douce/Le_image/icon/images_logo.png" width="200"></a>
+      </div>
+    </div>
+    <div class="groupactions" >
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce_Brand.HTML">關於品牌</a>
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_xmas.html">線上選購</a>
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Full%20moon.html">喜餅彌月</a>
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_New.html">最新消息</a>
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_QA.html#section1">購物須知</a>
+    <div class="button">
+      <img src="../La Saveur Douce/Le_image/icon/SHOPPING.png" class="firstlogo" href="gallery.html" width="30" >
+    </div>
+    <div class="button secondary" >
+      <a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Member.html">
+      <button class="Button__Wrapper-sc-1-1rpmxt-0 1ko0DP small" type="primary" style="width:120px">
+      <span>註冊/登入</span>
+      </button>
+      </a>
+    </div>
+    <!-- 其他選單項目 -->
+    <div class="menubutton">
+      <input type="checkbox" id="toggle">
+      <label for="toggle" class="toggle-label">&#9776;</label>
+      <div class="sidebar">
+          <label for="toggle" class="close-btn">&times;</label>
+          <img src="../La Saveur Douce/Le_image/icon/images_logo.png" href="#" alt="logo" height="0";>
+          <ul>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce.HTML">首頁</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce_Brand.HTML">關於品牌</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Full%20moon.html">喜餅彌月</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_New.html">最新消息</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_QA.html#section1">購物須知</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Member.html">會員中心</a></li>
+              <!-- 其他選單項目 -->
+          </ul>
+      </div>
+    </div>  
+    </div>
+</div>
+</div>
+</div>
+<!--上方導覽列END-->
+
+<main class="bodylayout">
+  <div class="bodybodylayout">
+    <div class="container">
+      <div class="menu">
+        <ul>
+          <li><div class="section1"><a href="#section1">常見問題</a></div></li>
+          <li><div class="section1"><a href="#section2">隱私權政策</a></div></li>
+          <li><div class="section1"><a href="#section3">使用者條款</a></div></li>
+        </ul>
+        <!-- <div class="section1">
+          <span>常見問題</span>
+        </div>
+        <div class="section2">
+          <span>隱私權政策</span>
+        </div>
+        <div class="section3">
+          <span>使用者條款</span>
+        </div> -->
+      </div>
+      <div class="content">
+        
+        <div id="section1">
+          <h2>常見問題</h2>
+          <p>▍ 若發票資料有誤，如：忘記開立統編、統編打錯、金額錯誤，怎麼處理？
+            >> 收到發票七日內（含假日）若資料有誤，需更改抬頭名稱或統一編號，請您至網站右下方點選【LINE客服】註明要修改的抬頭、統編及發票寄送EMAIL地址，客服人員將會盡速為您處理（逾期恕不受理）
+            
+            ▍ 二聯式發票可以改為三聯式發票嗎？
+            >> 請於下單選擇時確認二聯電子發票(個人消費)或三聯(公司報帳用)發票，為配合國稅局勸止二聯換開三聯之政策，本公司有權利考量各因素後拒絕換開發票。
+            
+            
+            ▍ 已開立電子發票還可以換為實體發票嗎？
+            >> 無法為您更換為實體發票。
+            官網消費一律為電子發票，會於結帳後EMAIL至您的信箱
+            若需實體發票，則限定於門市現場消費。
+            
+            
+            ▍ 若商品有狀況出現，怎麼處理？
+            >> 如有非人為因素所致之商品損毀、漏寄、或商品出現狀況，請務必當場錄影存證、保留完整商品，並於第一時間致電或私訊告知客服人員並留下訂購人資訊，我們將儘快為您處理後續事宜。
+            
+            
+            ▍ 產品保存期限？
+            >> 嚴選新鮮食材，皆無添加防腐劑，故賞味期限較短為正常現象。
+            慶祝蛋糕以及新鮮水果類甜點，建議當天（最晚隔天）一定要食用完畢。
+            其餘商品依照商品出貨標籤上日期為準。
+            隨貨附上保冷劑維持新鮮，蛋糕請於二十分鐘內進冷藏保存。</p>
+        </div>
+        <div id="section2">
+          <h2>隱私權政策</h2>
+          <p>La Saveur Douce 法式甜點店（以下簡稱「本店」、「我們」或「我們的」）重視您的隱私權。本隱私權政策說明了我們收集的個人資訊類型、如何使用這些資訊、與誰分享這些資訊以及我們對您個人資訊保密的承諾。請仔細閱讀本政策以了解我們的作法和措施。
+
+            ▍收集的個人資訊類型
+            
+            我們可能會收集您提供的個人資訊，這包括但不限於姓名、聯絡資訊（例如電話號碼、地址、電子郵件地址）、付款資訊（例如信用卡資訊）以及其他在您與我們互動時提供的資訊。
+            
+            ▍資訊使用
+            
+            我們會使用收集的個人資訊來處理您的訂單、提供客戶服務、向您發送促銷信息、維護網站和服務的運作、以及履行法律義務。
+            
+            ▍資訊分享
+            
+            我們不會出售、出租或交易您的個人資訊給第三方。然而，在必要情況下，我們可能會與合作夥伴、服務提供商或符合法律要求的機構分享您的資訊。
+            
+            ▍資訊保護
+            
+            我們致力於保護您的個人資訊安全。我們採取適當的技術和組織措施來防止未經授權訪問、洩漏、更改或摧毀您的個人資訊。
+            
+            ▍Cookie和類似技術
+            
+            我們的網站可能使用cookie和類似技術來收集和儲存有關您訪問本網站的信息。您可以通過瀏覽器設置來控制或拒絕cookie。請注意，拒絕cookie可能會影響您使用網站的部分功能。
+            
+            ▍兒童隱私
+            
+            我們的服務並不針對未滿18歲的兒童。如果您發現您的未成年子女向我們提供了個人資訊，請立即聯繫我們以便我們採取必要措施刪除這些資訊。
+            
+            ▍隱私權政策的變更
+            
+            我們可能會不時修改或更新本隱私權政策。我們建議您定期查看本政策，以瞭解我們處理您個人資訊的最新作法。
+            
+            ▍聯絡我們
+            
+            如果您對本隱私權政策有任何疑問或疑慮，請通過以下方式與我們聯繫：
+            
+            La Saveur Douce 法式甜點店
+            地址：[地址]
+            電子郵件：[電子郵件地址]
+            電話：[電話號碼]
+            
+            謝謝您閱讀我們的隱私權政策。上述政策旨在幫助您瞭解我們如何收集、使用和保護您的個人資訊。
+            </p>
+        </div>
+        <div id="section3">
+          <h2>使用者條款</h2>
+          <p>▍ 服務條款與購買說明
+
+            一. 訂購與訂單查詢注意事項
+            
+            1.訂購流程：
+            1.瀏覽您喜歡的商品，進入商品頁面
+            2.選擇訂購規格
+            3.選擇訂購數量
+            4.選擇取貨方式：因應商品特性，每個商品開放的取貨方式不一定相同，請點開下拉選單選擇
+            5.選擇日期：
+            *自取為實際前往法朋門市取貨的日期與時間，同一筆訂單的日期與時間必須ㄧ致，若選擇不同時間，將以第一個加入購物車的商品選擇的時間作為實際取貨時間。
+            *宅配為希望到貨的時間（收到黑貓物流交貨的時間），為避免貨運量大延遲風險，建議提前訂購或使用自取方式購買商品。
+            6.選擇時段
+            *宅配無法指定到貨時間，只能選擇希望到貨的時段。
+            7.立即購買或加入購物車：可點選立即購買直接進入購物車頁面，或點加入購物車繼續選購。
+            *La Saveur Douce 法式甜點店商品皆為新鮮製作，訂單「完成付款」後才算成立，方正式進入生產製作流程。
+            
+            2.提醒您，在購物車按下「下一步」前，請再次確認商品口味、數量、取貨日/配送日、金額是否正確。
+            
+            3.如需查詢訂單狀態，請至[會員中心]的[訂單總覽」查詢訂單。
+            
+            4.前往結帳後，請儘快完成信用卡付款，15分鐘後付款頁面將會失效。
+            
+            因商品流動速度快，若有確定訂購的商品，加入購物車後建議後先進行結帳，若系統偵測到購物車內商品已不足供應您購物車的數量，本商品將會自動被清空。
+            本站不進行商品預留，訂單成立順序以付款先後順序為準，若遇結帳時商品庫存不足導致無法購買，敬請見諒。
+            5.到貨日期會依照您指定選取的日期安排配送，但當日送達的時間仍以物流司機實際安排為主，恕無法指定與保證準點配達。遇特殊節慶時，配送易有延遲或早到狀況，也可能增加商品受損的機率， 為保商品品質無虞，建議您提前一至二天預訂或改以法朋門市自取，以免耽誤您的重要節日。
+            
+            6.La Saveur Douce 法式甜點店保有修改商品、暫停接單、取消訂單之權利。
+            
+            7.本站為響應環保，使用線上電子發票，不隨貨附發票。發票開立後，將會寄送email至會員收件人email地址。您也可至[訂單總覽]內進行查詢發票開立狀態。​
+            
+            8.若需要發票三聯發票寄送服務，請在結帳填寫收件人資訊頁面，勾選三聯發票。若發票寄送地址與會員地址不同，請填寫發票寄送地址。
+            
+            二. 配送服務相關注意事項
+            
+            1.若於運送過程中，因路面環境導致蛋糕位移、變形或盒內四周沾到奶油、裝飾品，或水果、巧克力裝飾片脫落等情況，恕不接受退貨或退款。若您無法承受運送風險，建議改選La Saveur Douce 門市自取。
+            
+            本站提供取貨方式為：La Saveur Douce 法式甜點店門市自取/黑貓常溫宅配/黑貓冷藏宅配/黑貓冷凍宅配。
+            目前不提供離島宅配服務，花東地區若選擇宅配，會加收10元費用。
+            3.因貨運量龐大或不可抗力之因素，到貨時間可能會延遲，黑貓宅急便無法確保包裹隔日送達。可能會延遲2-3天到貨（也無法指定配送時間，建議提前1-2天訂購寄出蛋糕。以免延誤到您的重要日子）
+            
+            4.寄件日不是到貨日
+            寄出後送達日期以及時間由黑貓宅配安排(週日不收、送貨)。需要2-3天時間才會收到 (例如:您禮拜一寄出，可能禮拜三、四才會收到，不會禮拜一就到貨！)
+            
+            商品出貨後，您可於[會員中心]的[訂單總覽]中查詢物流編號，進度可由黑貓包裹查詢頁面查詢：https://www.t-cat.com.tw/inquire/trace.aspx。
+            三. 退換貨說明
+            
+            1.依據「通訊交易解除權合理例外情事適用準則」第2條第一項：「易於腐敗、保存期限較短或解約時即將逾期」之商品，屬於消費者保護法第19條第一項但書所稱合理例外情事。自105年1月1日起，生鮮食品不適用於消費者保護法第19條，並不享有7天猶豫期。
+            
+            2.黑貓貨運量龐大，蛋糕或商品可能發生不可避免之碰撞或位移，若無法接受請勿選擇宅配，建議使用自取方式領取。
+            
+            3.若有任何疑問，請洽本站一對一LINE客服。
+            
+            防詐騙提醒：
+            ※La Saveur Douce 法式甜點店不會以電話主動要求您操作ATM進行轉帳或提供任何資料，請勿理會+號開頭可疑電話，因來電顯示
+            可經變造，如接獲類似電話或簡訊請勿理會，建議撥打『165』反詐騙專線，或通知La Saveur Douce 法式甜點店協助處理，謝謝
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!--FOTTER 使用Bootstrap 4 Grids-->
+
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div class="col-sm-3 p-3 text-secondary bg-white">
+        <ul>
+            <li>關於La Saveur Douce</li>
+            <li>最新消息</li>
+            <li>商品列表</li>
+        </ul>
+        <ul>
+          <br>
+          <div class=icon01><img src="../La Saveur Douce/Le_image/icon/icon (1).png" href="" width="30">
+          <img src="../La Saveur Douce/Le_image/icon/icon (2).png" href="" width="30">
+          <img src="../La Saveur Douce/Le_image/icon/icon (3).png" href="" width="30"></div>
+        </ul>
+    </div>
+    <div class="col-sm-3 p-3 text-secondary bg-white">
+        <ul>
+            <li>喜餅與彌月</li>
+            <li>常見問題</li>
+            <li>會員中心</li>
+        </ul>
+        <img src="../La Saveur Douce/Le_image/icon/images_logo.png" href="" width="250">
+    </div>
+    <div class="col-sm-3 p-3 text-secondary bg-white">
+        <ul>
+            <li>客服服務時間<br>週一至週日10:00~17:00</li>
+            <li>客服服務電話<br>02-8988-8888</li>
+        </ul>
+    </div>
+    <div class="col-sm-3 p-3 text-secondary bg-white">
+        <ul>
+            <li>營業時間<br>週一至週日11:00~19:00</li>
+            <li>最後取貨時間<br>週一至週日19:00</li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Saverur Douse_Spopping</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/La Saveur Douce/Le_image/icon/1.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Noto Serif TC' rel='stylesheet'>
+  </head>
+
+<style>
+  
+  ::selection {
+  background-color: #BB0009;
+  color: #fff;
+}
+
+    /**********************導覽列css****************************/
+    .popular-products-content {
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+    }
+    .ciNxDx {
+      display: flex;
+      flex-direction: column;
+      width: calc(33% - 35%);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 30px 4px;
+      cursor: pointer;
+      transition: box-shadow 0.2s ease-in 0s;
+    }
+
+    .navbar-wrapper {
+      height: 90px;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .iMKRuG {
+      height: 100%;
+      max-width: 1240px;
+      background-color: rgb(255, 255, 255);
+      margin:0px auto;
+      padding: 0px;
+      display: flex;
+      -webkit-box-pack:justify;
+      justify-content:space-between;
+    }
+
+    .iMKRuG > .group-actions {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    .iMKRuG > .group-actions .button {
+      margin-right: 0px;
+      cursor: pointer;
+      position:relative;
+      font-family:"NSimSun";
+      font-size :16px;
+    }
+
+    .groupactions {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    .iMKRuG > .groupactions .button {
+      cursor: pointer;
+      margin-right: 30px;
+      position: relative;
+      font-family: "NSimSun";
+      font-size: 16px;
+    }
+
+    .buttonsecondary { 
+      cursor:pointer;
+      margin-right: 30px;
+      position: relative;
+      font-family: "Noto Serif TC";
+      font-size: 24px;
+      text-decoration: none;
+      color: #020202;
+      outline:none;
+    }
+
+    a,a:focus {
+      outline:none;
+    }
+
+    .carousel {
+      position: relative;
+      top: 80px;
+    }
+
+    .groupactions button {
+    padding: 8px 15px;
+    background-color: #BB0009;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    }
+
+    .groupactions button:hover {
+    background-color: #BB0009;
+    }
+    
+/*****************************上方固定 CSS*******************************/
+  .row {
+  /*padding-left: 100px;
+  padding-right: 100px;*/
+  position: relative;
+  top: 80px;
+  }
+
+
+
+/*********************************************** 線條************************************* */
+
+.footerline {
+  position: relative;
+  width: 85%;
+  height: 0.5px; /* 線的高度 */
+  background-color: #909090; /* 線的顏色 */
+  margin: 20px auto;
+}
+
+/************************************************line右下角******************************/
+    /* 基本設定 */
+  body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 固定圖案的樣式 */
+.fixed-icon {
+  position: fixed;
+  bottom: 30px; /* 距離底部的距離 */
+  right: 70px; /* 距離右側的距離 */
+  width: 1px; /* 圖案的寬度 */
+  border-radius: 50%; /* 圖案的圓角 */
+  background-color: #0074e4; /* 圖案背景色 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 9999; /* 可能需要提高 z-index，確保顯示在其他元素之上 */
+}
+
+  /* 圖案悬浮效果 */
+  .fixed-icon:hover {
+  background-color: #0058a3; /* 悬浮時的背景色 */
+}
+
+  /* 圖案悬浮時的圖標效果 */
+  .fixed-icon:hover img {
+  filter: brightness(0.8); /* 悬浮時圖標變暗效果，你可以調整數值 */
+}
+  /*line右下角end*/
+
+
+  /********************************** 商品輪播容器樣式 *********************************/
+  .slider {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 主要輪播區塊樣式 */
+.main-slide {
+  text-align: center;
+  position: relative;
+}
+
+.main-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* 縮略圖區塊樣式 */
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  max-width: 100px;
+  height: auto;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.thumbnail.active {
+  opacity: 1;
+}
+
+
+/*******************************CAKEBODY ****************************/
+
+
+.ejvTMu {
+max-width:var(--content-max-width);
+width:100%;
+justify-content: space-between;
+/* display: flex; */
+}
+
+.ant-row {
+  display: flex;
+}
+
+.slider {
+  width: 500px;
+
+}
+
+.active {
+  border-radius: 7px;
+}
+
+.thumbnail {
+  border-radius: 7px;
+}
+
+
+
+/******************************右邊切版******************************/
+
+h1 {
+  font-size: 34px;
+  color: rgb(89,97,87);
+  letter-spacing: 0px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  font-family : "Noto Serif TC"
+}
+
+.hint {
+  font-size: 14px;
+  color: rgb(89,97,87);
+  display: block;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 14px;
+  color: rgb(89,97,87);
+  letter-spacing: 0px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgb(229,229,234);
+  border-bottom: 1px solid rgb(229,229, 234);
+  white-space: pre-wrap;
+  font-family : "Noto Serif TC"
+}
+
+
+/******************************右邊切版/訂購金額******************************/
+
+.grid-form {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 8fr; /* 設定欄位的比例 */
+  align-items: center;
+  justify-items: start;
+  font-family: "Noto Serif TC",Noto Sans TC,sans-serif;
+}
+
+label {
+  text-align: right;
+}
+
+input, select {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;s
+}
+
+input[type="number"], input[type="text"] {
+  /* 可根據需求調整外觀 */
+}
+
+input[type="datetime-local"] ::-webkit-datetime-edit-text {
+  color: #BB0009;
+}
+
+.money {
+  padding: 15px 0px;
+  font-size: 20pt;
+  font-family : "Noto Serif TC";
+}
+
+/* 移除金額總計的框線並設置背景為透明 */
+  input[type="text"]#total {
+  border: none; /* 移除所有框線 */
+  background: transparent; /* 設置背景為透明 */
+  font-size: 28px;
+  color: #BB0009;
+  /* 如果需要增加一些視覺效果，你可以添加其他樣式，例如下面這樣 */
+  /* box-shadow: none; */
+  /* outline: none; */
+}
+
+
+/******************************立即購買/加入購物車按鈕******************************/
+
+.btnbutton,
+.btnbutton:focus {
+    position: relative;
+    min-width: 200px;
+    background-color: #BB0009;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    padding: 10px 20px;
+    border: none;
+}
+.btnbutton:hover {
+    background-color: #d32d35;
+    color: white;
+    transition-duration: 0.1s;
+}
+.btnbutton:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+    border-radius: 4em;
+}
+.btnbutton:active:after {
+    opacity: 1;
+    transition: 0s;
+    box-shadow: 0 0 0 0 white;
+}
+.btnbutton:active {
+    top: 1px;
+}
+
+.ctnbutton,
+.ctnbutton:focus {
+    position: relative;
+    min-width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(124, 124, 124);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    padding: 10px 20px;
+    border: none;
+}
+.ctnbutton:hover {
+    background-color:  rgb(187, 187, 187);
+    color: white;
+    transition-duration: 0.1s;
+}
+.ctnbutton:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+    border-radius: 4em;
+}
+.ctnbutton:active:after {
+    opacity: 1;
+    transition: 0s;
+    box-shadow: 0 0 0 0 white;
+}
+.ctnbutton:active {
+    top: 1px;
+}
+
+
+/***************************下方資訊*********************/
+
+  /* 列表群組的樣式 */
+  .list-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px; /* 按鈕之間的間距 */
+}
+
+/* 列表項目的樣式 */
+.list-item {
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.list-item:hover {
+  background-color: #BB0009;
+  color: #f0f0f0;
+}
+
+/* 選項內容的樣式 */
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+/**********************導覽列其他選單**********************/
+
+   /* 預設隱藏 checkbox */
+   input[type="checkbox"] {
+    display: none;
+}
+
+/* 設置 label 的樣式 */
+.toggle-label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: right; /* 將 Toggle Menu 文字設置在右側 */
+    font-size:30px;
+}
+
+/* 側邊選單的樣式 */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: -250px; /*將側邊選單設置在右側並隱藏*/
+    transition: right 0.3s ease;
+}
+
+/* 當 checkbox 被選中時展開選單 */
+input[type="checkbox"]:checked ~ .sidebar {
+    right: 0;
+}
+
+/* 關閉按鈕的樣式 */
+.close-btn {
+    display: block;
+    text-align: right;
+    padding: 30px;
+    cursor: pointer;
+    color: rgb(89,87,87);
+    font-size: 40px;
+}
+
+/* 選單項目的樣式 */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    font-family: "Noto Serif TC";
+    font-size: 18px;
+}
+
+.sidebar ul li {
+    padding: 20px;
+}
+
+.sidebar ul li a {
+    color: rgb(89,87,87);
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: none;
+    color: #BB0009;
+}
+
+.menubutton {
+  padding-top: 14px;
+}
+
+
+/********************************RWD隱藏導覽列******************/
+
+@media screen and (max-width: 930px) {
+  .link-secondary {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .left group-actions {
+    display: none;
+  }
+
+  .logofirst {
+    width: 200px;
+  }
+}
+
+
+
+/*****************************RWD右邊切版*******************/
+
+
+
+</style>
+
+<body style="background-color:#f6f6f6 ;">
+
+
+  <!--line右下角-->
+
+  <!-- 右下角固定圖案 -->
+  <a href="https://line.me/ti/p/nHYW7y2kWk" class="fixed-icon" target="_blank">
+    <img src="../La Saveur Douce/Le_image/icon/icon (4).png" alt="Line Icon">
+  </a>
+
+  <script src="script.js"></script>
+
+<!--line右下角end-->
+
+<!--上方導覽列-->
+<div class="navbar-wrapper shadow p-3 mb-5 bg-body">
+  <div class="iMKRuG">
+    <div class="left group-actions">
+      <div class="logofirst">
+        <a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce.HTML" > <img src="../La Saveur Douce/Le_image/icon/images_logo.png" width="200"></a>
+      </div>
+    </div>
+    <div class="groupactions" >
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce_Brand.HTML">關於品牌</a>
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_xmas.html">線上選購</a>
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Full%20moon.html">喜餅彌月</a>
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_New.html">最新消息</a>
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_QA.html#section1">購物須知</a>
+    <div class="button">
+      <img src="../La Saveur Douce/Le_image/icon/SHOPPING.png" class="firstlogo" href="gallery.html" width="30" >
+    </div>
+    <div class="button secondary" >
+      <a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Member.html">
+      <button class="Button__Wrapper-sc-1-1rpmxt-0 1ko0DP small" type="primary" style="width:120px">
+      <span>註冊/登入</span>
+      </button>
+      </a>
+    </div>
+    <!-- 其他選單項目 -->
+    <div class="menubutton">
+      <input type="checkbox" id="toggle">
+      <label for="toggle" class="toggle-label">&#9776;</label>
+      <div class="sidebar">
+          <label for="toggle" class="close-btn">&times;</label>
+          <img src="../La Saveur Douce/Le_image/icon/images_logo.png" href="#" alt="logo" height="0";>
+          <ul>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce.HTML">首頁</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce_Brand.HTML">關於品牌</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Full%20moon.html">喜餅彌月</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_New.html">最新消息</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_QA.html#section1">購物須知</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Member.html">會員中心</a></li>
+              <!-- 其他選單項目 -->
+          </ul>
+      </div>
+    </div>  
+    </div>
+</div>
+</div>
+</div>
+<!--上方導覽列END-->
+
+
+<!--CAKEBODY-->
+
+<div class="Product__Wrapper-sc-1xhdm7w-0 ejvTMu">
+  <div class="ant-row" style="margin:0px auto ; justify-content:center;">
+    <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-12" style="padding-left: 0.5px; padding-right: 0.5px;padding-top: 150px;">
+      <div class="slider">
+        <div class="main-slide">
+          <img src="../La Saveur Douce/Le_image/shopping/chocolate_1.jfif" alt="Product 1" class="active">
+        </div>
+        <div class="thumbnails">
+          <img src="../La Saveur Douce/Le_image/shopping/chocolate_2.jfif" alt="Thumbnail 1" class="thumbnail active">
+          <img src="../La Saveur Douce/Le_image/shopping/chocolate_3.jfif" alt="Thumbnail 2" class="thumbnail">
+          <img src="../La Saveur Douce/Le_image/shopping/chocolate_4.jfif" alt="Thumbnail 3" class="thumbnail">
+          <!-- 添加更多縮略圖 -->
+        </div>
+      </div>
+    </div>
+    <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-1" style="padding-left: 40px; padding-right: 0.5px;">
+    </div>
+    <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-11" style="padding-left: 0.5px; padding-right: 0.5px;padding-top: 150px;">
+      <div class="ProductConfigPanel__Wrapper-sc-1folwl6-0 ckggfe">
+        <h1>紅酒巧克力國王派</h1>
+        <span class="hint">
+          保存方式：室溫25度可存放2天，冷凍可放7天，依照包裝標示為準
+        </span>
+        <p>
+        ｜蛋奶素｜含酒｜
+        歐洲天然奶油/日本鳥越法國麵粉/農場雞蛋/義大利西西里島頂級杏仁粉/三溫糖/巧克力杏仁餡(80%巧克力)/紅酒肉桂水果餡(青森蘋果、黃檸檬、香吉士)
+          
+        ＊內有瓷偶，請小心食用
+        </p>
+        <div class="config container">
+          <form class="grid-form">
+            <label for="quantity">訂購數量：</label>
+            <input type="number" id="quantity" name="quantity" placeholder="請輸入數量">
+          
+            <label for="pickup">取貨方式：</label>
+            <select id="pickup" name="pickup">
+              <option value="self">自取</option>
+              <option value="delivery">宅配,宅配物流費200元</option>
+            </select>
+          
+            <label for="date">自取日期：</label>
+            <input type="datetime-local" id="date" name="date">
+            
+            <label for="summary">商品金額 : </label>
+            <div class="money"> 980元 </div>
+
+            <label for="total">金額總計：</label>
+            <input type="text" id="total" name="total" readonly>
+          </form>
+        </div>
+        <div class="actions-wrapper" style="padding-bottom: 50px;padding-top: 30px;">
+          <button class="Button__Wrapper-sc-1rpmxt-0 btnbutton defualt" type="primary" style="margin: 12px;width: calc(40% - 6px);visibility: visible;">
+          <span>立即購買</span>
+          </button>
+          <button class="Button__Wrapper-sc-1rpmxt-0 ctnbutton defualt" type="secondary" style="margin: 12px;width: calc(40% - 6px);">
+            <span>加入購物車</span>
+            </button>
+        </div>
+        <div class="ProductAdditionalPurchasePanel__Wrapper-sc-19tprzu-0 eXfHpO">
+          <div class="additional-purchase container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ant-col">
+    <div class="ProductInfoTabs__Wrapper-sc-1prtmvp-0 buUPgh" style="margin-bottom: 100px; margin-left: 150px; margin-right: 150px;">
+      <div class="list-group">
+        <button class="list-item" data-tab="tab1">商品介紹</button>
+        <button class="list-item" data-tab="tab2">運送說明</button>
+        <button class="list-item" data-tab="tab3">常見問題</button>
+      </div>
+      
+      <div class="tab-content" id="tab1">
+        <p>
+        ｜蛋奶素｜含酒｜
+        歐洲天然奶油/日本鳥越法國麵粉/農場雞蛋/義大利西西里島頂級杏仁粉/三溫糖/巧克力杏仁餡(80%巧克力)/紅酒肉桂水果餡(青森蘋果、黃檸檬、香吉士)
+            
+        ＊內有瓷偶，請小心食用
+        </p>
+      </div>
+      <div class="tab-content" id="tab2" style="display: none;">
+        <p>
+        ▍為什麼有些蛋糕無法宅配?
+        我們的宅配透過黑貓宅急便寄出送過程中容易毁損，故無法寄送鮮奶油蛋糕或造型蛋糕。
+    
+        ▍因疫情無法指定到貨日與配送時段，疫情影響,黑貓宅急便無法確保包裹隔日送達，可能會延遲2-3天到货,也無法指定配送時間，寄出后送達日期及時間由黑貓宅配安排，
+        不會當日寄出,當日就收到貨，例如:您禮拜一寄出,可能禮拜三、四才會收到。
+    
+        ▍宅配貼心叮嚀 宅急便 *黑貓週日不收送货，因黑猫宅急便物流量大蛋糕可能發生不可避免的碰撞，會有位移的風險若無法接受勿選擇宅配，
+        若蛋糕有嚴重毁損情形請第一時間拍照並回傳至LINE客服，客服將會依訊息順序回覆。
+        </p>
+      </div>
+      <div class="tab-content" id="tab3" style="display: none;">
+        <p>
+        ▍ 若發票資料有誤，如：忘記開立統編、統編打錯、金額錯誤，怎麼處理？
+        >> 收到發票七日內（含假日）若資料有誤，需更改抬頭名稱或統一編號，請您至網站右下方點選【LINE客服】註明要修改的抬頭、統編及發票寄送EMAIL地址，客服人員將會盡速為您處理（逾期恕不受理）
+        
+        ▍ 二聯式發票可以改為三聯式發票嗎？
+        >> 請於下單選擇時確認二聯電子發票(個人消費)或三聯(公司報帳用)發票，為配合國稅局勸止二聯換開三聯之政策，本公司有權利考量各因素後拒絕換開發票。
+        
+        ▍ 已開立電子發票還可以換為實體發票嗎？
+        >> 無法為您更換為實體發票。
+        官網消費一律為電子發票，會於結帳後EMAIL至您的信箱
+        若需實體發票，則限定於門市現場消費。
+        
+        ▍ 若商品有狀況出現，怎麼處理？
+        >> 如有非人為因素所致之商品損毀、漏寄、或商品出現狀況，請務必當場錄影存證、保留完整商品，並於第一時間致電或私訊告知客服人員並留下訂購人資訊，我們將儘快為您處理後續事宜。
+        
+        ▍ 產品保存期限？
+        >> 嚴選新鮮食材，皆無添加防腐劑，故賞味期限較短為正常現象。
+        慶祝蛋糕以及新鮮水果類甜點，建議當天（最晚隔天）一定要食用完畢。
+        其餘商品依照商品出貨標籤上日期為準。
+        隨貨附上保冷劑維持新鮮，蛋糕請於二十分鐘內進冷藏保存。
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--FOTTER 使用Bootstrap 4 Grids-->
+
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div class="col-sm-3 p-3 text-secondary bg-white">
+        <ul>
+            <li>關於La Saveur Douce</li>
+            <li>最新消息</li>
+            <li>商品列表</li>
+        </ul>
+        <ul>
+          <br>
+          <div class=icon01><img src="../La Saveur Douce/Le_image/icon/icon (1).png" href="" width="30">
+          <img src="../La Saveur Douce/Le_image/icon/icon (2).png" href="" width="30">
+          <img src="../La Saveur Douce/Le_image/icon/icon (3).png" href="" width="30"></div>
+        </ul>
+    </div>
+    <div class="col-sm-3 p-3 text-secondary bg-white">
+        <ul>
+            <li>喜餅與彌月</li>
+            <li>常見問題</li>
+            <li>會員中心</li>
+        </ul>
+        <img src="../La Saveur Douce/Le_image/icon/images_logo.png" href="" width="250">
+    </div>
+    <div class="col-sm-3 p-3 text-secondary bg-white">
+        <ul>
+            <li>客服服務時間<br>週一至週日10:00~17:00</li>
+            <li>客服服務電話<br>02-8988-8888</li>
+        </ul>
+    </div>
+    <div class="col-sm-3 p-3 text-secondary bg-white">
+        <ul>
+            <li>營業時間<br>週一至週日11:00~19:00</li>
+            <li>最後取貨時間<br>週一至週日19:00</li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+
+
+
+  ///////////////////////////輪播圖片//////////////////////////
+
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  const mainSlide = document.querySelector('.main-slide img');
+
+  thumbnails.forEach(thumbnail => {
+  thumbnail.addEventListener('click', function() {
+  thumbnails.forEach(item => item.classList.remove('active'));
+  this.classList.add('active');
+  mainSlide.src = this.src;
+});
+});
+
+
+
+///////////////////////////商品訂購//////////////////////////
+
+  // 商品金額和總金額的固定值
+  const pricePerItem = 980; // 假設商品金額為 10 元
+  
+  // 當數量輸入改變時，計算總金額
+  const quantityInput = document.getElementById('quantity');
+  const totalInput = document.getElementById('total');
+  const pickupSelect = document.getElementById('pickup');
+  
+  quantityInput.addEventListener('input', updateTotal);
+  pickupSelect.addEventListener('change', updateTotal);
+  
+  function updateTotal() {
+    const quantity = quantityInput.valueAsNumber || 0;
+    const pickupMethod = pickupSelect.value;
+  
+    let total = quantity * pricePerItem;
+  
+    // 如果選擇宅配，則增加額外費用
+    if (pickupMethod === 'delivery') {
+      const deliveryFee = 200; // 宅配額外費用 200 元
+      total += deliveryFee;
+    }
+  
+    totalInput.value = total.toFixed(1); // 顯示總金額，保留1位小數
+  }
+  
+  /////////////////下方資訊///////////////////
+
+  document.addEventListener("DOMContentLoaded", function() {
+  const tabs = document.querySelectorAll(".list-item");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", function() {
+      const tabId = this.getAttribute("data-tab");
+      tabContents.forEach(content => {
+        if (content.id === tabId) {
+          content.style.display = "block";
+        } else {
+          content.style.display = "none";
+        }
+      });
+    });
+  });
+});
+    </script>
+
+</body>
+</html>

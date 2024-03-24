@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Saverur Douse_Spopping</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/La Saveur Douce/Le_image/icon/1.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Noto Serif TC' rel='stylesheet'>
+  </head>
+
+<style>
+  
+  ::selection {
+  background-color: #BB0009;
+  color: #fff;
+}
+
+    /**********************導覽列css****************************/
+    .popular-products-content {
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+    }
+    .ciNxDx {
+      display: flex;
+      flex-direction: column;
+      width: calc(33% - 35%);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 30px 4px;
+      cursor: pointer;
+      transition: box-shadow 0.2s ease-in 0s;
+    }
+
+    .navbar-wrapper {
+      height: 90px;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .iMKRuG {
+      height: 100%;
+      max-width: 1240px;
+      background-color: rgb(255, 255, 255);
+      margin:0px auto;
+      padding: 0px;
+      display: flex;
+      -webkit-box-pack:justify;
+      justify-content:space-between;
+    }
+
+    .iMKRuG > .group-actions {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    .iMKRuG > .group-actions .button {
+      margin-right: 0px;
+      cursor: pointer;
+      position:relative;
+      font-family:"NSimSun";
+      font-size :16px;
+    }
+
+    .groupactions {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    .iMKRuG > .groupactions .button {
+      cursor: pointer;
+      margin-right: 30px;
+      position: relative;
+      font-family: "NSimSun";
+      font-size: 16px;
+    }
+
+    .buttonsecondary { 
+      cursor:pointer;
+      margin-right: 30px;
+      position: relative;
+      font-family: "Noto Serif TC";
+      font-size: 24px;
+      text-decoration: none;
+      color: #020202;
+      outline:none;
+    }
+
+    a,a:focus {
+      outline:none;
+    }
+
+    .carousel {
+      position: relative;
+      top: 80px;
+    }
+
+    .groupactions .icon {
+      display: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .groupactions a:not(:first-child) {display: none;}
+      .groupactions a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .groupactions .responsive {position: relative;}
+      .groupactions.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .groupactions.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+<body style="background-color:#f6f6f6 ;">
+
+
+
+  <!--上方導覽列-->
+  <div class="navbar-wrapper shadow p-3 mb-5 bg-body">
+    <div class="iMKRuG">
+      <div class="left group-actions">
+        <div class="button">
+          <a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce.HTML" > <img src="../La Saveur Douce/Le_image/icon/images_logo.png" width="250"></a>
+        </div>
+      </div>
+      <div class="groupactions" id="mygroupactions">
+      <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce_Brand.HTML">關於品牌</a>
+      <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_xmas.html">線上選購</a>
+      <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Full%20moon.html">喜餅彌月</a>
+      <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_New.html">最新消息</a>
+      <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_QA.html#section1">購物須知</a>
+      <a href="javascript:void(0)"; class="icon" onclick="myFuction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <!-- <a class="shopping">
+        <img src="../La Saveur Douce/Le_image/icon/icon (6).png"  href="gallery.html" width="30" >
+      <a> -->
+      </div>
+
+  <script>
+    function myFuction() {
+      var x = document.getElementById("mygroupactions");
+      if (x.className === "groupactions") {
+        x.className += "responsive";
+      } else {
+        x.className = "groupactions";
+      }
+    }
+  </script>
+          
+  </div>
+  </div>
+</div>
+<!--上方導覽列END-->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

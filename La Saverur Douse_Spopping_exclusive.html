@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Saverur Douse_Spopping</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/La Saveur Douce/Le_image/icon/1.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Noto Serif TC' rel='stylesheet'>
+  </head>
+
+<style>
+
+::selection {
+  background-color: #BB0009;
+  color: #fff;
+}
+  
+
+    /**********************導覽列css****************************/
+    .popular-products-content {
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+    }
+    .ciNxDx {
+      display: flex;
+      flex-direction: column;
+      width: calc(33% - 35%);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 30px 4px;
+      cursor: pointer;
+      transition: box-shadow 0.2s ease-in 0s;
+    }
+
+    .navbar-wrapper {
+      height: 90px;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .iMKRuG {
+      height: 100%;
+      max-width: 1240px;
+      background-color: rgb(255, 255, 255);
+      margin:0px auto;
+      padding: 0px;
+      display: flex;
+      -webkit-box-pack:justify;
+      justify-content:space-between;
+    }
+
+    .iMKRuG > .group-actions {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    .iMKRuG > .group-actions .button {
+      margin-right: 0px;
+      cursor: pointer;
+      position:relative;
+      font-family:"NSimSun";
+      font-size :16px;
+    }
+
+    .groupactions {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    .iMKRuG > .groupactions .button {
+      cursor: pointer;
+      margin-right: 30px;
+      position: relative;
+      font-family: "NSimSun";
+      font-size: 16px;
+    }
+
+    .buttonsecondary { 
+      cursor:pointer;
+      margin-right: 30px;
+      position: relative;
+      font-family: "Noto Serif TC";
+      font-size: 24px;
+      text-decoration: none;
+      color: #020202;
+      outline:none;
+    }
+
+    a,a:focus {
+      outline:none;
+    }
+
+    .carousel {
+      position: relative;
+      top: 80px;
+    }
+
+    
+.groupactions button {
+  padding: 8px 15px;
+  background-color: #BB0009;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  }
+
+  .groupactions button:hover {
+  background-color: #BB0009;
+  }
+    
+    /*****************************上方固定 CSS*******************************/
+    .row {
+      /*padding-left: 100px;
+      padding-right: 100px;*/
+      position: relative;
+      top: 80px;
+    }
+
+    /********************************側面選單 only****************************/
+
+    .block-inner, #Content .container.js-container {
+      width: 1400px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 10px 20px;
+      border-bottom:#272727
+    }
+    .block-inner {
+      width: 1400px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 90px 20px;
+    }
+
+    .pd-box {
+      padding: 15px 20px;
+    }
+
+    /*@media (min-width: 992px)*/
+    .left-c-box {
+      width: 20%;
+      float: left;
+    }
+
+    .ProductList-categoryMenu {
+      padding: 20px;
+      text-decoration: none;
+    }
+
+    ul {
+      margin: 0;
+      list-style-position: outside;
+      
+    }
+    .ProductList-categoryMenu .List-item {
+      display: block;
+      margin: 0;
+      line-height: 24px;
+      list-style: none;
+      font-weight: normal;
+      text-decoration: none;
+      position: relative;
+      padding: 8px;
+      padding-left: 25px;
+      cursor: pointer;
+      font-family:"Noto Serif TC",Noto Sans TC,sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover   {color:#BB0009;;}
+
+    .List-item-title {
+      font-family:"Noto Serif TC",Noto Sans TC,sans-serif;
+      list-style-type: circle;
+      color: #BB0009;
+      font-size: 22px;
+    }
+
+    .List-item {
+      font-size: 18px;
+      margin-left: 0 auto;
+    }
+
+    .Label {
+      color: #6c757d;
+    }
+
+    .Labeltitle {
+      color: #BB0009;
+    }
+
+    /**********************右邊商品**************************/
+    .ProductList-list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      padding: 0;
+    }
+
+    .col-xs-12 {
+      width: 100%;
+    }
+    
+    .ProductList-list .product-item, .ProductList-list .Product-item {
+      padding: 5px 5px 15px;
+    }
+
+    .ProductList-list .product-item {
+      width: 33.3%;
+      position: relative;
+      margin-bottom: 15px;
+    }
+
+    .product-item {
+      text-align: center;
+    }
+
+    .right-c-box {
+      width: 78%;
+      float: right;
+    }
+
+    .ProductList-select {
+      flex-basis : 100% ;
+    }
+
+    .rowPoduct {
+      margin-left :15px;
+      margin-right: 15px;
+    }
+
+    /***********************************卡片*******************************/
+
+    /* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  /*padding: 1rem; bug*/
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #BB0009;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(187, 0, 9, 0.2);
+  background: transparent;
+  font-family:"Noto Serif TC",Noto Sans TC,sans-serif ;
+}
+
+.btn:hover {
+  background-color: rgba(187, 0, 9, 50);
+  color: #f6f6f6;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: #ffffff;
+}
+
+.card_title {
+  color: #BB0009;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  font-family:Noto Sans, Mitr, Athiti, Noto Sans TC, Noto Sans SC, system-ui, -apple-system, Segoe UI, sans-serif ;
+}
+
+.card_text {
+  color: #6c757d;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.cardh1 {
+  font-family:"Noto Serif TC",Noto Sans TC,sans-serif;
+  padding: 15px 25px;
+  color: #BB0009;
+  font-size: 20px;
+}
+
+.card_image {
+
+  overflow: hidden;
+}
+
+.card_image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card_image img:hover {
+  transform: scale(1.2);
+}
+
+/*********************************************** 線條************************************* */
+
+.footerline {
+  position: relative;
+  width: 85%;
+  height: 0.5px; /* 線的高度 */
+  background-color: #909090; /* 線的顏色 */
+  margin: 20px auto;
+}
+
+/************************************************line右下角******************************/
+    /* 基本設定 */
+    body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 固定圖案的樣式 */
+.fixed-icon {
+  position: fixed;
+  bottom: 30px; /* 距離底部的距離 */
+  right: 70px; /* 距離右側的距離 */
+  width: 1px; /* 圖案的寬度 */
+  border-radius: 50%; /* 圖案的圓角 */
+  background-color: #0074e4; /* 圖案背景色 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 9999; /* 可能需要提高 z-index，確保顯示在其他元素之上 */
+}
+
+/* 圖案悬浮效果 */
+.fixed-icon:hover {
+  background-color: #0058a3; /* 悬浮時的背景色 */
+}
+
+/* 圖案悬浮時的圖標效果 */
+.fixed-icon:hover img {
+  filter: brightness(0.8); /* 悬浮時圖標變暗效果，你可以調整數值 */
+}
+/*line右下角end*/
+
+/************************ 購物車彈出視窗的樣式 *******************************/
+.cart-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.cart-content {
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* *****************************************購物車項目的樣式 ********************************/
+.cart-item {
+  margin-bottom: 10px;
+}
+
+/**********************導覽列其他選單**********************/
+
+   /* 預設隱藏 checkbox */
+   input[type="checkbox"] {
+    display: none;
+}
+
+/* 設置 label 的樣式 */
+.toggle-label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: right; /* 將 Toggle Menu 文字設置在右側 */
+    font-size:30px;
+}
+
+/* 側邊選單的樣式 */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: -250px; /*將側邊選單設置在右側並隱藏*/
+    transition: right 0.3s ease;
+}
+
+/* 當 checkbox 被選中時展開選單 */
+input[type="checkbox"]:checked ~ .sidebar {
+    right: 0;
+}
+
+/* 關閉按鈕的樣式 */
+.close-btn {
+    display: block;
+    text-align: right;
+    padding: 30px;
+    cursor: pointer;
+    color: rgb(89,87,87);
+    font-size: 40px;
+}
+
+/* 選單項目的樣式 */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    font-family: "Noto Serif TC";
+    font-size: 18px;
+}
+
+.sidebar ul li {
+    padding: 20px;
+}
+
+.sidebar ul li a {
+    color: rgb(89,87,87);
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: none;
+    color: #BB0009;
+}
+
+.menubutton {
+  padding-top: 14px;
+}
+
+
+/********************************RWD隱藏導覽列******************/
+
+@media screen and (max-width: 930px) {
+  .link-secondary {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .left group-actions {
+    display: none;
+  }
+
+  .logofirst {
+    width: 200px;
+  }
+}
+
+</style>
+
+<body style="background-color:#f6f6f6 ;">
+
+
+  <!--line右下角-->
+
+  <!-- 右下角固定圖案 -->
+  <a href="https://line.me/ti/p/nHYW7y2kWk" class="fixed-icon" target="_blank">
+    <img src="../La Saveur Douce/Le_image/icon/icon (4).png" alt="Line Icon">
+  </a>
+
+  <script src="script.js"></script>
+
+<!--line右下角end-->
+
+<!--上方導覽列-->
+<div class="navbar-wrapper shadow p-3 mb-5 bg-body">
+  <div class="iMKRuG">
+    <div class="left group-actions">
+      <div class="logofirst">
+        <a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce.HTML" > <img src="../La Saveur Douce/Le_image/icon/images_logo.png" width="250"></a>
+      </div>
+    </div>
+    <div class="groupactions" >
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce_Brand.HTML">關於品牌</a>
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_xmas.html">線上選購</a>
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Full%20moon.html">喜餅彌月</a>
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_New.html">最新消息</a>
+    <a class="link-secondary buttonsecondary" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_QA.html#section1">購物須知</a>
+    <div class="button">
+      <img src="../La Saveur Douce/Le_image/icon/SHOPPING.png" class="firstlogo" href="gallery.html" width="30" >
+    </div>
+    <div class="button secondary" >
+      <a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Member.html">
+      <button class="Button__Wrapper-sc-1-1rpmxt-0 1ko0DP small" type="primary" style="width:120px">
+      <span>註冊/登入</span>
+      </button>
+      </a>
+    </div>
+    <!-- 其他選單項目 -->
+    <div class="menubutton">
+      <input type="checkbox" id="toggle">
+      <label for="toggle" class="toggle-label">&#9776;</label>
+      <div class="sidebar">
+          <label for="toggle" class="close-btn">&times;</label>
+          <img src="../La Saveur Douce/Le_image/icon/images_logo.png" href="#" alt="logo" height="0";>
+          <ul>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce.HTML">首頁</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saveur%20Douce_Brand.HTML">關於品牌</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Full%20moon.html">喜餅彌月</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_New.html">最新消息</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_QA.html#section1">購物須知</a></li>
+              <li><a href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Member.html">會員中心</a></li>
+              <!-- 其他選單項目 -->
+          </ul>
+      </div>
+    </div>  
+    </div>
+</div>
+</div>
+</div>
+<!--上方導覽列END-->
+
+<!--BANNER-->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../La Saveur Douce/Le_image/Home page/image_banner (7).jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../La Saveur Douce/Le_image/Home page/image_banner (6).jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../La Saveur Douce/Le_image/Home page/image_banner (5).jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+<!--BANNEREND-->
+
+
+<!-- 商品選單 only -->
+
+
+<div class="block-inner">
+  <div class="pd-box clearfix">
+    
+    <div class="left-c-box hidden-xs hidden-sm"> <!-- 左邊選單 only -->
+      <ul class="ProductList-categoryMenu  is-mobile-collapsed-">
+        <br>
+        <br>
+        <br>
+        <li class="List-item-title"><a class="Labeltitle">節日限定</a></li>
+        <li class="List-item"><a class="Label" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_xmas.html">聖誕專區</a></li>
+        <li class="List-item"><a class="Label primary-color-hover" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_strawberry.html">冬日草莓</a></li>
+        <li class="List-item-title"><a class="Labeltitle">送禮首選</a></li>
+        <li class="List-item"><a class="Label primary-color-hover" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_tea.html">午茶系列</a></li>
+        <li class="List-item"><a class="Label primary-color-hover" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_lover.html">情人禮盒</a></li>
+        <li class="List-item-title"><a class="Labeltitle">蛋糕專區</a></li>
+        <li class="List-item"><a class="Label primary-color-hover" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_celebrate.html">慶祝蛋糕</a></li>
+        <li class="List-item"><a class="Label primary-color-hover" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_exclusive.html">獨享蛋糕</a></li>
+        <li class="List-item-title"><a class="Labeltitle">法式甜點</a></li>
+        <li class="List-item"><a class="Label primary-color-hover" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_pastry.html">小糕點</a></li>
+        <li class="List-item-title"><a class="Labeltitle" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_lunchbox.html">餐盒專區</a></li>
+        <li class="List-item"><a class="Label primary-color-hover" href="http://127.0.0.1:5501/La%20Saveur%20Douce/La%20Saverur%20Douse_Spopping_lunchbox.html">經典/精選/豪華款</a></li>
+      </ul>
+      <div class="left-c-box hidden-xs hidden-sm"></div> <!--響應式網頁 還未設定-->
+
+<!-- 右面選單 GO -->
+    </div>
+    <div class="right-c-box">
+      <div class="main">
+        <div class="cardh1"><p>獨享蛋糕</p></div>
+        <ul class="cards">
+          <li class="cards_item">
+            <div class="card">
+            <a href="http://127.0.0.1:5501/La%20Saveur%20Douce/reservation.html">
+              <div class="card_image"><img src="../La Saveur Douce/Le_image/Product/card-Exclusive-1.jpg"></div>
+              
+              <div class="card_content">
+                <h2 class="card_title">草莓慕斯蛋糕 Strawberry Mousse Cake</h2>
+                <br>
+                <p class="card_text">由輕盈的草莓慕斯層和蛋糕或餅乾層交替疊起而成的甜點，口感柔軟綿密</p>
+            </a>
+                <button class="btn card_btn" onclick="addToCart()">加入購物車</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="../La Saveur Douce/Le_image/Product/card-Exclusive-2.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">草莓千層蛋糕 Strawberry Layer Cake</h2>
+                <br>
+                <p class="card_text">由多層蛋糕片、忌廉和草莓片堆疊而成的甜點，每層都有酥脆和濃郁的層次感</p>
+                <button class="btn card_btn" onclick="addToCart()">加入購物車</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="../La Saveur Douce/Le_image/Product/card-Exclusive-3.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">草莓夏洛特 Strawberry Charlotte</h2>
+                <br>
+                <p class="card_text">用蛋糕或餅乾片圍繞的圓筒形甜點，內部填滿了草莓、卡士達醬</p>
+                <button class="btn card_btn" onclick="addToCart()">加入購物車</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="../La Saveur Douce/Le_image/Product/card-Exclusive-4.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">草莓拿破崙 Strawberry Napoleon</h2>
+                <br>
+                <p class="card_text">由酥脆的酥皮和卡士達醬或忌廉夾層、草莓片和糖霜層組成的法式甜點</p>
+                <button class="btn card_btn" onclick="addToCart()">加入購物車</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="../La Saveur Douce/Le_image/Product/card-Exclusive-5.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">草莓巧克力蛋糕 Strawberry Chocolate Cake</h2>
+                <br>
+                <p class="card_text">結合了草莓和巧克力的美味，蛋糕上鋪滿了草莓，草莓與巧克力混合的蛋糕</p>
+                <button class="btn card_btn" onclick="addToCart()">加入購物車</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="../La Saveur Douce/Le_image/Product/card-Exclusive-6.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">草莓巧克力蛋糕 Strawberry Chocolate Cake</h2>
+                <br>
+                <p class="card_text">結合了草莓和巧克力的美味，蛋糕上鋪滿了草莓，草莓與巧克力混合的蛋糕</p>
+                <button class="btn card_btn" onclick="addToCart()">加入購物車</button>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 右面選單 END -->
+
+
+<div class="footerline"></div>
+
+<!--FOTTER 使用Bootstrap 4 Grids-->
+
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div class="col-sm-3 p-3 text-secondary bg-white">
+        <ul>
+            <li>關於La Saveur Douce</li>
+            <li>最新消息</li>
+            <li>商品列表</li>
+        </ul>
+        <ul>
+          <br>
+          <div class=icon01><img src="../La Saveur Douce/Le_image/icon/icon (1).png" href="" width="30">
+          <img src="../La Saveur Douce/Le_image/icon/icon (2).png" href="" width="30">
+          <img src="../La Saveur Douce/Le_image/icon/icon (3).png" href="" width="30"></div>
+        </ul>
+    </div>
+    <div class="col-sm-3 p-3 text-secondary bg-white">
+        <ul>
+            <li>喜餅與彌月</li>
+            <li>常見問題</li>
+            <li>會員中心</li>
+        </ul>
+        <img src="../La Saveur Douce/Le_image/icon/images_logo.png" href="" width="250">
+    </div>
+    <div class="col-sm-3 p-3 text-secondary bg-white">
+        <ul>
+            <li>客服服務時間<br>週一至週日10:00~17:00</li>
+            <li>客服服務電話<br>02-8988-8888</li>
+        </ul>
+    </div>
+    <div class="col-sm-3 p-3 text-secondary bg-white">
+        <ul>
+            <li>營業時間<br>週一至週日11:00~19:00</li>
+            <li>最後取貨時間<br>週一至週日19:00</li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+  <!-- 模擬商品加入購物車的按鈕 
+  <button class="btn card_btn" onclick="addToCart()">加入購物車</button>-->
+
+  <!-- 購物車彈出視窗 -->
+  <div class="cart-popup" id="cartPopup">
+    <div class="cart-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>已加入購物車</h2>
+      <div id="cartItems"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function addToCart() {
+  // 假設點擊加入購物車後，將商品名稱和數量添加到購物車視窗中
+  const cartItems = document.getElementById('cartItems');
+  const item = document.createElement('div');
+  item.classList.add('cart-item');
+  //item.textContent = '商品名稱 - 數量'; // 替換為實際的商品名稱和數量
+  cartItems.appendChild(item);
+
+  // 顯示購物車視窗
+  const cartPopup = document.getElementById('cartPopup');
+  cartPopup.style.display = 'block';
+}
+
+function closePopup() {
+  // 關閉購物車視窗
+  const cartPopup = document.getElementById('cartPopup');
+  cartPopup.style.display = 'none';
+
+  // 清空購物車中的商品
+  const cartItems = document.getElementById('cartItems');
+  cartItems.innerHTML = '';
+}
+
+  </script>
+
+
+</body>
+</html>
